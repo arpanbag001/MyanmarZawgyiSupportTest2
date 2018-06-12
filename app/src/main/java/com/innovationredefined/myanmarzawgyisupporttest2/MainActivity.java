@@ -43,12 +43,17 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-
         TextView textView = findViewById(R.id.textview);
+
+        TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/ZawgyiOne.ttf.ttf"); // font from assets: "assets/fonts/Roboto-Regular.ttf
+
         /*
         Typeface tf_mm3 = Typeface.createFromAsset(getAssets(), "fonts/ZawgyiOne.ttf");
         textView.setTypeface(tf_mm3);
 */
+
+
+
         textView.setText(text);
     }
 
